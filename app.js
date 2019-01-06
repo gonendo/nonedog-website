@@ -1,16 +1,11 @@
 var express = require('express');
 var app = express();
 
-app.use(function(err, req, res, next) {
-  console.error(err);
-  res.status(500).send('internal server error');
-})
-
 app.set('view engine', 'pug');
 
 app.get('/', function(req, res) {
   console.log(app.get('views'));
-  res.render('index', { title: 'Hey', message: 'Hello there!'});
+  res.render('index', { title: "Gonendo's website", message: "WIP"});
 });
 
 app.post('/', function(req, res) {
