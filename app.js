@@ -21,6 +21,9 @@ app.use(stylus.middleware({
 app.use(express.static(__dirname + '/public'));
 
 app.get('/', home.home);
+app.get('/test', function(req, res) {
+  res.send('test');
+});
 
 // Export your Express configuration so that it can be consumed by the Lambda handler
 module.exports = app
