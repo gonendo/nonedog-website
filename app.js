@@ -1,16 +1,14 @@
 var express = require('express');
 var app = express();
 
+app.set('view engine', 'pug');
+
 app.get('/', function(req, res) {
-  res.send({
-    "Output": "Hello World!"
-  });
+  console.log(app.get('views'));
+  res.render('index', { title: 'Hey', message: 'Hello there!'});
 });
 
 app.post('/', function(req, res) {
-  res.send({
-    "Output": "Hello World!"
-  });
 });
 
 
