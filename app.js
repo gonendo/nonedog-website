@@ -1,6 +1,11 @@
 var express = require('express');
 var app = express();
 
+app.use(function(err, req, res, next) {
+  console.error(err);
+  res.status(500).send('internal server error');
+})
+
 app.set('view engine', 'pug');
 
 app.get('/', function(req, res) {
