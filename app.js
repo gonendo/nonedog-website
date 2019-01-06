@@ -16,14 +16,12 @@ try {
   list.forEach(function(file){
     if(path.extname(file)=='.styl'){
       var str = fs.readFileSync(__dirname + '/public/css/' + file, 'utf8');
+      console.log('compile ' + file + ' into css');
       stylus(str)
         .use(nib())
         .render(function(err, css){
-          if (err) throw err;
-          fs.writeFile(__dirname + '/public/css/' + path.basename(file, '.styl') + '.css', css, function(err) {
-            if (err) throw err;
-          });
-  });
+          fs.writeFileSync(__dirname + '/public/css/' + path.basename(file, '.styl') + '.css', css, 'utf8');
+      });
     }
   });
 } catch (error) {
