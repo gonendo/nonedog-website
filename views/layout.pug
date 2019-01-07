@@ -1,12 +1,13 @@
 html
     head
         title Gonendo's Website
-        block styles
-            style
-                #{layoutCss}
+        link(href='https://fonts.googleapis.com/css?family=Roboto' rel="stylesheet")
+        style.
+            #{css}
         block scripts
     body
         block content
-        block foot
-            #footer
-                p.footer 2019 - Gonendo
+        footer
+            div(class='footer')
+                div(class='footer-inner')
+                    p Webdesign and code © 2019 Brice 'Gonendo' Andriantafika

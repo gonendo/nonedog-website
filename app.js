@@ -6,7 +6,7 @@ var stylus = require('stylus');
 var nib = require('nib');
 var path = require('path');
 var app = express();
-global.css = [];
+global.css = '';
 
 app.set('view engine', 'pug');
 
@@ -17,11 +17,10 @@ try {
   list.forEach(function(file){
     if(path.extname(file)=='.styl'){
       var str = fs.readFileSync(__dirname + '/stylesheets/' + file, 'utf8');
-      console.log('compile ' + file + ' into css');
       stylus(str)
         .use(nib())
         .render(function(err, css){
-          global.css[path.basename(file, '.styl') + '.css'] = css;
+          global.css += '\n' + css;
       });
     }
   });
