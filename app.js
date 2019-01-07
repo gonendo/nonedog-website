@@ -11,12 +11,12 @@ global.css = [];
 app.set('view engine', 'pug');
 
 // Get the stylus files css content and save them in a global var
-var dir = __dirname + '/public/css';
+var dir = __dirname + '/stylesheets';
 try {
   var list = fs.readdirSync(dir);
   list.forEach(function(file){
     if(path.extname(file)=='.styl'){
-      var str = fs.readFileSync(__dirname + '/public/css/' + file, 'utf8');
+      var str = fs.readFileSync(__dirname + '/stylesheets/' + file, 'utf8');
       console.log('compile ' + file + ' into css');
       stylus(str)
         .use(nib())
