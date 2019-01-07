@@ -1,23 +1,25 @@
-html
+doctype
+html(lang='en')
     head
         title Gonendo's Website
-        link(href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel="stylesheet")
+        link(href='http://static.none.dog/files/img/favicon.ico' rel='icon')
+        link(href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet')
         style.
             #{css}
         block scripts
     body
-        section(id='banner')
+        div(id='banner')
             div(class='banner')
                 div(class='banner-greeting')
                     p.banner-greeting-text Welcome to Gonendo's website
                 div(class='social')
                     div(class='networks')
                         a(href='https://github.com/gonendo' target='_blank')
-                            img(src="http://static.none.dog/files/img/github.png")
+                            img(src="http://static.none.dog/files/img/github.png" alt='Gonendo\'s Github account')
                         a(href='https://youtube.com/gonendo' target='_blank')
-                            img(src="http://static.none.dog/files/img/youtube.png")
+                            img(src="http://static.none.dog/files/img/youtube.png" alt='Gonendo\'s Youtube channel')
                         a(href='http://www.linkedin.com/in/brice-andriantafika-898944176' target='_blank')
-                            img(src="http://static.none.dog/files/img/linkedin.png")
+                            img(src="http://static.none.dog/files/img/linkedin.png" alt='Brice Andriantafika on Linkedin')
         section(id='content')
             div(class='content')
                 block content
