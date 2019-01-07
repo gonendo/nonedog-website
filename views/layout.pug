@@ -1,12 +1,26 @@
 html
     head
         title Gonendo's Website
-        link(href='https://fonts.googleapis.com/css?family=Roboto' rel="stylesheet")
+        link(href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel="stylesheet")
         style.
             #{css}
         block scripts
     body
-        block content
+        section(id='banner')
+            div(class='banner')
+                div(class='banner-greeting')
+                    p.banner-greeting-text Welcome to Gonendo's website
+                div(class='social')
+                    div(class='networks')
+                        a(href='https://github.com/gonendo' target='_blank')
+                            img(src="http://static.none.dog/files/img/github.png")
+                        a(href='https://youtube.com/gonendo' target='_blank')
+                            img(src="http://static.none.dog/files/img/youtube.png")
+                        a(href='http://www.linkedin.com/in/brice-andriantafika-898944176' target='_blank')
+                            img(src="http://static.none.dog/files/img/linkedin.png")
+        section(id='content')
+            div(class='content')
+                block content
         footer
             div(class='footer')
                 div(class='footer-inner')
