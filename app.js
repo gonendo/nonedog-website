@@ -9,12 +9,15 @@ var app = express();
 
 app.set('view engine', 'pug');
 
+console.log("stylus test");
+
 // Compile the stylus files into css
 var dir = __dirname + '/public/css';
 try {
   var list = fs.readdirSync(dir);
-  /*list.forEach(function(file){
-    if(path.extname(file)=='.styl'){
+  list.forEach(function(file){
+    console.log(file);
+    /*if(path.extname(file)=='.styl'){
       var str = fs.readFileSync(__dirname + '/public/css/' + file, 'utf8');
       console.log('compile ' + file + ' into css');
       stylus(str)
@@ -22,8 +25,8 @@ try {
         .render(function(err, css){
           fs.writeFileSync(__dirname + '/public/css/' + path.basename(file, '.styl') + '.css', css, 'utf8');
       });
-    }
-  });*/
+    }*/
+  });
 } catch (error) {
   console.error(error);
 }
