@@ -13,7 +13,7 @@ app.set('view engine', 'pug');
 var dir = __dirname + '/public/css';
 try {
   var list = fs.readdirSync(dir);
-  list.forEach(function(file){
+  /*list.forEach(function(file){
     if(path.extname(file)=='.styl'){
       var str = fs.readFileSync(__dirname + '/public/css/' + file, 'utf8');
       console.log('compile ' + file + ' into css');
@@ -23,7 +23,7 @@ try {
           fs.writeFileSync(__dirname + '/public/css/' + path.basename(file, '.styl') + '.css', css, 'utf8');
       });
     }
-  });
+  });*/
 } catch (error) {
   console.error(error);
 }
