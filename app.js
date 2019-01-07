@@ -6,26 +6,24 @@ var stylus = require('stylus');
 var nib = require('nib');
 var path = require('path');
 var app = express();
+global.css = [];
 
 app.set('view engine', 'pug');
 
-console.log("stylus test");
-
-// Compile the stylus files into css
+// Get the stylus files css content and save them in a global var
 var dir = __dirname + '/public/css';
 try {
   var list = fs.readdirSync(dir);
   list.forEach(function(file){
-    console.log(file);
-    /*if(path.extname(file)=='.styl'){
+    if(path.extname(file)=='.styl'){
       var str = fs.readFileSync(__dirname + '/public/css/' + file, 'utf8');
       console.log('compile ' + file + ' into css');
       stylus(str)
         .use(nib())
         .render(function(err, css){
-          fs.writeFileSync(__dirname + '/public/css/' + path.basename(file, '.styl') + '.css', css, 'utf8');
+          global.css[path.basename(file, '.styl') + '.css'] = css;
       });
-    }*/
+    }
   });
 } catch (error) {
   console.error(error);
