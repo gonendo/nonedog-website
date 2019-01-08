@@ -1,32 +1,36 @@
 var home = require('./routes/home');
 
 var express = require('express');
-var fs = require('fs')
-var stylus = require('stylus');
-var nib = require('nib');
+var expressVue = require("express-vue");
 var path = require('path');
 var app = express();
-global.css = '';
 
-app.set('view engine', 'pug');
-
-// Get the stylus files css content and save them in a global var
-var dir = __dirname + '/stylesheets';
-try {
-  var list = fs.readdirSync(dir);
-  list.forEach(function(file){
-    if(path.extname(file)=='.styl'){
-      var str = fs.readFileSync(__dirname + '/stylesheets/' + file, 'utf8');
-      stylus(str)
-        .use(nib())
-        .render(function(err, css){
-          global.css += '\n' + css;
-      });
+global.vueOptions = {
+  template: {
+    html : {
+      start : "<!DOCTYPE html><html lang=\"en\">",
+      end : "</html>"
     }
-  });
-} catch (error) {
-  console.error(error);
+  },
+  head : {
+    title : "Gonendo's Website",
+    styles : [{
+        style : 'https://fonts.googleapis.com/css?family=Source+Code+Pro'
+    }],
+    metas : [
+      {
+        rel: 'icon', 
+        href: 'https://static.none.dog/files/img/favicon.ico'
+      }
+    ]
+  }
 }
+
+var vueOptions = {
+  rootPath: path.join(__dirname, "views")
+};
+const expressVueMiddleware = expressVue.init(vueOptions);
+app.use(expressVueMiddleware);
 
 app.get('/', home.home);
 

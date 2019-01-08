@@ -1,3 +1,6 @@
-exports.home = function(req, res){
-    res.render('home', {css : css});
+var path = require('path');
+exports.home = function(req, res, next){
+    const data = {
+    };
+    res.renderVue('home.vue', data, vueOptions);
 };
