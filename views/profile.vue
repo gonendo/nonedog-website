@@ -36,7 +36,7 @@ export default {
 
 .avatarbg
     width: 200px
-    background-color: #eeeeee
+    background-color: #dddddd
 
 .avatar
     margin-top: 10px
