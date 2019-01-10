@@ -5,7 +5,8 @@ var expressVue = require("express-vue");
 var path = require('path');
 var app = express();
 
-global.vueOptions = {
+const vueOptions = {
+  rootPath: path.join(__dirname, "views"),
   template: {
     html : {
       start : "<!DOCTYPE html><html lang=\"en\">",
@@ -26,9 +27,6 @@ global.vueOptions = {
   }
 }
 
-var vueOptions = {
-  rootPath: path.join(__dirname, "views")
-};
 const expressVueMiddleware = expressVue.init(vueOptions);
 app.use(expressVueMiddleware);
 

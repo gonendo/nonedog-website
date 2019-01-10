@@ -28,10 +28,17 @@ export default {
     background: linear-gradient(to right, #12418c 70%, #4bacd8)
     height: 300px
     display: grid
-    grid-template-columns: 50% 50%
+    @media (min-width: 601px)
+        grid-template-columns: 50% 1fr
+    @media (max-width: 600px)
+        grid-template-rows: repeat(2, 1fr)
+        justify-items: center
 
 .banner-greeting
-    height: 300px
+    @media (min-width: 601px)
+        height: 300px
+    @media (max-width: 600px)
+        height: 150px
     display: flex
     flex-direction: column
     justify-content: center
@@ -40,15 +47,22 @@ export default {
     font-size: 2.5em
     font-weight: bold
     color: white
-    margin-left: 70px
+    @media (min-width: 601px)
+        margin-left: 70px
+    @media (max-width: 600px)
+        text-align: center
 
 .social
-    margin-top: 200px
+    @media (min-width: 601px)
+        margin-top: 200px
+    @media (max-width: 600px)
+        margin-top: 50px
     height: 100px
 
 .networks
-    position: absolute
-    right: 70px
+    @media (min-width: 601px)
+        position: absolute
+        right: 70px
     width: 220px
     display: grid
     grid-template-columns: repeat(3, 1fr)

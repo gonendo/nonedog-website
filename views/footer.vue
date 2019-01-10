@@ -1,8 +1,7 @@
 <template lang="pug">
 footer
     div(class='footer')
-        div(class='footer-inner')
-            p Webdesign and code © 2019 Brice 'Gonendo' Andriantafika
+        p Webdesign and code © 2019-present Brice Andriantafika
 </template>
 <script>
 export default {
@@ -18,9 +17,6 @@ export default {
     left: 0
     right: 0
     width: 100%
-
-.footer-inner
     font-size: 0.9em
-    color: black
     text-align: center
 </style>
