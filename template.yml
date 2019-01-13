@@ -47,6 +47,8 @@ Resources:
           Properties:
             Path: /
             Method: post
+      MemorySize: 1024
+      Timeout: 60
   LambdaExecutionRole:
     Description: Creating service role in IAM for AWS Lambda
     Type: AWS::IAM::Role
