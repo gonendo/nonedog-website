@@ -17,14 +17,14 @@ Parameters:
 
 Globals:
   Function:
-    AutoPublishAlias: dev
+    AutoPublishAlias: live
     DeploymentPreference:
       Enabled: true
       Type: Canary10Percent5Minutes
       Role: !Ref CodeDeployRole
 
 Resources:
-  HelloWorld:
+  GetIndex:
     Type: AWS::Serverless::Function
     Properties:
       Handler: index.handler
