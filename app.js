@@ -14,7 +14,7 @@ const vueOptions = {
     }
   },
   head : {
-    title : "Gonendo's Website (Dev)",
+    title : "Gonendo's Website",
     styles : [{
         style : 'https://fonts.googleapis.com/css?family=Source+Code+Pro'
     }],
