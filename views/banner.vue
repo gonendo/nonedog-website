@@ -47,6 +47,7 @@ export default {
     font-size: 2.5em
     font-weight: bold
     color: white
+    text-shadow: 2px 2px 4px #000000
     @media (min-width: 601px)
         margin-left: 70px
     @media (max-width: 600px)
