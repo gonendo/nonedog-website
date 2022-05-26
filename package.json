@@ -7,7 +7,7 @@
         "express": "4.18.1",
         "babel-core": "^6.26.3",
         "babel-preset-env": "^1.7.0",
-        "vue": "^3.2.36",
+        "vue": "^2.6.14",
         "express-vue": "^5.16.0",
         "pug": "^3.0.2",
         "stylus": "^0.57.0",
@@ -17,7 +17,8 @@
         "mocha": "10.0.0",
         "nodemon": "^2.0.16",
         "supertest": "6.2.3",
-        "unit.js": "2.1.1"
+        "unit.js": "2.1.1",
+        "vue-template-compiler": "^2.6.14"
     },
     "scripts": {
         "test": "mocha --recursive tests",
