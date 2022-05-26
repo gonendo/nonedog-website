@@ -18,7 +18,12 @@
         "nodemon": "^2.0.16",
         "supertest": "6.2.3",
         "unit.js": "2.1.1",
-        "vue-template-compiler": "^2.6.14"
+        "vue-template-compiler": "^2.6.14",
+        "postcss": ">=7.0.36",
+        "is-svg": ">=4.3.0",
+        "color-string": ">=1.5.5",
+        "glob-parent": ">=5.1.2",
+        "js-yaml": ">=3.13.1"
     },
     "scripts": {
         "test": "mocha --recursive tests",
