@@ -1,7 +1,7 @@
 <template lang="pug">
 footer
     div(class='footer')
-        p Webdesign and code © 2019-present Brice Andriantafika
+        p Webdesign and code © 2022-present Brice Andriantafika
 </template>
 <script>
 export default {
