@@ -11,6 +11,6 @@ artifacts:
   type: zip
   files:
     - app.js
-    - package.json
     - routes/*
     - views/*
+    - node_modules/**/*
