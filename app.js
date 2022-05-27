@@ -32,5 +32,7 @@ app.use(expressVueMiddleware);
 
 app.get('/', home.home);
 
-const port = process.env.port;
+const port = process.env.port || 3000;
 app.listen(port, () => console.log('server listening on port '+port));
+
+module.exports = app

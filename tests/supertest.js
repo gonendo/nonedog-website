@@ -1,5 +1,4 @@
 const supertest = require('supertest');
-const assert = require('assert');
 const app = require("../app")
 
 describe("GET /", () => {
@@ -10,6 +9,6 @@ describe("GET /", () => {
             .end((err,res) => {
                 if (err) done(err);
                 done();
-            })
+            });
     });
 });
