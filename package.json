@@ -21,8 +21,7 @@
     "devDependencies": {
         "mocha": "10.0.0",
         "nodemon": "^2.0.16",
-        "supertest": "6.2.3",
-        "unit.js": "2.1.1"
+        "supertest": "6.2.3"
     },
     "scripts": {
         "test": "mocha --recursive tests",
