@@ -11,7 +11,7 @@ div
                     different social networks accounts.
             div
                 profile(name='Brice Andriantafika' 
-                avatar='https://static.none.dog/files/img/photo.jpg'
+                avatar='https://www.gravatar.com/avatar/f30b1f8e04c0a59caa4e724f9e4eb674'
                 mail="shikigami@gmail.com"
                 hobbies="Programming, Video games, Listening to music")
     footer-component
@@ -38,9 +38,11 @@ body
     padding: 0
     font-size: 100%
     min-width: 400px
+    background #000
 
 p,h2
     font-family: 'Source Code Pro', monospace
+    color: #fff
 
 .content
     margin: 70px 70px 70px 70px

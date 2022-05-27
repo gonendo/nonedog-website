@@ -1,16 +1,16 @@
 <template lang="pug">
-    div
-        div(class='banner')
-            div(class='banner-greeting')
-                p.banner-greeting-text Welcome to Gonendo's website
-            div(class='social')
-                div(class='networks')
-                    a(href='https://github.com/gonendo' target='_blank')
-                        img(class='socialicon' src='https://static.none.dog/files/img/github.png' alt='Gonendo\'s Github account')
-                    a(href='https://youtube.com/gonendo' target='_blank')
-                        img(class='socialicon' src='https://static.none.dog/files/img/youtube.png' alt='Gonendo\'s Youtube channel')
-                    a(href='http://www.linkedin.com/in/brice-andriantafika-898944176' target='_blank')
-                        img(class='socialicon' src='https://static.none.dog/files/img/linkedin.png' alt='Brice Andriantafika on Linkedin')
+div
+    div(class='banner')
+        div(class='banner-greeting')
+            p.banner-greeting-text Welcome to Gonendo's website
+        div(class='social')
+            div(class='networks')
+                a(href='https://github.com/gonendo' target='_blank')
+                    img(class='socialicon' src='../assets/github.png' alt='Gonendo\'s Github account')
+                a(href='https://youtube.com/gonendo' target='_blank')
+                    img(class='socialicon' src='../assets/youtube.png' alt='Gonendo\'s Youtube channel')
+                a(href='http://www.linkedin.com/in/brice-andriantafika-898944176' target='_blank')
+                    img(class='socialicon' src='../assets/linkedin.png' alt='Brice Andriantafika on Linkedin')
 </template>
 <script>
 export default {

@@ -6,12 +6,9 @@ phases:
       - npm install
   build:
     commands:
-      - npm run test
+      - npm run build
 artifacts:
   type: zip
+  base-directory: 'dist'
   files:
-    - app.js
-    - .babelrc
-    - routes/*
-    - views/*
-    - node_modules/**/*
+    - '**/*'

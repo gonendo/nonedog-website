@@ -1,29 +1,20 @@
 {
     "name": "nonedog-website",
     "description": "Gonendo's personal website",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "private": true,
     "dependencies": {
-        "express": "4.18.1",
-        "babel-core": "^6.26.3",
-        "babel-preset-env": "^1.7.0",
-        "vue": "^2.6.14",
-        "express-vue": "^5.16.0",
+        "vue": "^3.2.36",
         "pug": "^3.0.2",
-        "stylus": "^0.57.0",
-        "postcss": ">=7.0.36",
-        "is-svg": ">=4.3.0",
-        "color-string": ">=1.5.5",
-        "glob-parent": ">=5.1.2",
-        "js-yaml": ">=3.13.1"
+        "stylus": "^0.57.0"
     },
     "devDependencies": {
-        "mocha": "10.0.0",
-        "nodemon": "^2.0.16",
-        "supertest": "6.2.3"
+        "@vitejs/plugin-vue": "^2.3.3",
+        "vite": "^2.9.9"
     },
     "scripts": {
-        "test": "mocha --recursive tests",
-        "dev": "set DEBUG=express:* && nodemon app.js --ext js,vue"
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview"
     }
 }

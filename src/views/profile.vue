@@ -1,13 +1,13 @@
 <template lang="pug">
-    div(class='profile')
-        div(class="avatarbg")
-            img(class="avatar" :src="avatar" :alt="name + '\\'s avatar'")
-        div
-            p.bold {{name}}<br/><br/>
-            p.bold contact:<br/>
-            p {{mail}}<br/><br/>
-            p.bold hobbies:<br/>
-            p {{hobbies}}
+div(class='profile')
+    div(class="avatarbg")
+        img(class="avatar" :src="avatar" :alt="name + '\\'s avatar'")
+    div
+        p.bold {{name}}<br/><br/>
+        p.bold contact:<br/>
+        p {{mail}}<br/><br/>
+        p.bold hobbies:<br/>
+        p {{hobbies}}
 </template>
 <script>
 export default {
@@ -36,7 +36,6 @@ export default {
 
 .avatarbg
     width: 200px
-    background-color: #dddddd
 
 .avatar
     margin-top: 10px
