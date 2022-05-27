@@ -4,7 +4,7 @@ phases:
   install:
     commands:
       # Install dependencies needed for running tests
-      - npm install
+      - npm install -g mocha
   build:
     commands:
       - npm run test
