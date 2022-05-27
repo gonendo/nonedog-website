@@ -33,6 +33,7 @@ app.use(expressVueMiddleware);
 app.get('/', home.home);
 
 const port = process.env.port || 3000;
-app.listen(port, () => console.log('server listening on port '+port));
+var server = app.listen(port, () => console.log('server listening on port '+port));
 
-module.exports = app
+exports.app = app;
+exports.server = server;
