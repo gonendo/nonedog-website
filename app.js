@@ -32,5 +32,5 @@ app.use(expressVueMiddleware);
 
 app.get('/', home.home);
 
-// Export your Express configuration so that it can be consumed by the Lambda handler
-module.exports = app
+const port = process.env.port;
+app.listen(port, () => console.log('server listening on port '+port));
