@@ -11,6 +11,7 @@ artifacts:
   type: zip
   files:
     - app.js
+    - .babelrc
     - routes/*
     - views/*
     - node_modules/**/*
