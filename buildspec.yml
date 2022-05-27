@@ -5,7 +5,7 @@ phases:
     commands:
       # Install dependencies needed for running tests
       - npm install
-  build:
+  pre_build:
     commands:
       - npm run test
 artifacts:
