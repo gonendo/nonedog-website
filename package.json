@@ -25,6 +25,6 @@
     },
     "scripts": {
         "test": "mocha --recursive tests",
-        "dev": "set DEBUG=express:* && nodemon server.js --ext js,vue"
+        "dev": "set DEBUG=express:* && nodemon app.js --ext js,vue"
     }
 }
