@@ -11,7 +11,6 @@
         "express-vue": "^5.16.0",
         "pug": "^3.0.2",
         "stylus": "^0.57.0",
-        "aws-serverless-express": "3.4.0",
         "postcss": ">=7.0.36",
         "is-svg": ">=4.3.0",
         "color-string": ">=1.5.5",
