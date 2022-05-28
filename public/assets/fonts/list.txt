@@ -1,0 +1,13 @@
+Chlorinp.woff2
+CRACKMAN.woff2
+Exocet.woff2
+FEASFBRG.woff2
+HaloRegular.woff2
+Iomanoid.woff2
+METAG___.woff2
+NiseZaxxon.woff2
+pdark.woff2
+Robotron.woff2
+Starcraft.woff2
+UnrealT.woff2
+Zrnic.woff2

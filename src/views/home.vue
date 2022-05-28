@@ -34,27 +34,27 @@ export default {
 </script>
 <style lang="stylus">
 body
-    margin: 0
-    padding: 0
-    font-size: 100%
-    min-width: 400px
+    margin 0
+    padding 0
+    font-size 100%
+    min-width 400px
     background #000
 
 p,h2
-    font-family: 'Source Code Pro', monospace
-    color: #fff
+    font-family 'Source Code Pro', monospace
+    color #fff
 
 .content
-    margin: 70px 70px 70px 70px
+    margin 70px 70px 70px 70px
 
 .header
-    display: grid
-    justify-items: center
-    @media (min-width: 601px)
-        grid-template-columns: 70% 1fr
-    @media (max-width: 600px)
-        grid-template-rows: 200px 1fr
+    display grid
+    justify-items center
+    @media (min-width 601px)
+        grid-template-columns 70% 1fr
+    @media (max-width 600px)
+        grid-template-rows 200px 1fr
 
 .greeting
-    margin: 0
+    margin 0
 </style>

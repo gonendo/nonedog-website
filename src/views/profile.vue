@@ -24,23 +24,23 @@ export default {
 </script>
 <style lang="stylus" scoped>
 .profile
-    font-size: 0.9em
-    width: 200px
-    border-color: #aaaaaa
-    border-width: thin
-    border-style: dashed
-    display: grid
-    grid-template-rows: 120px 1fr
-    justify-items: center
-    text-align: center
+    font-size 0.9em
+    width 200px
+    border-color #aaaaaa
+    border-width thin
+    border-style dashed
+    display grid
+    grid-template-rows 120px 1fr
+    justify-items center
+    text-align center
 
 .avatarbg
-    width: 200px
+    width 200px
 
 .avatar
-    margin-top: 10px
-    border-radius: 50%
+    margin-top 10px
+    border-radius 50%
 
 .bold
-    font-weight: bold
+    font-weight bold
 </style>

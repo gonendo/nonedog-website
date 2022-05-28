@@ -12,11 +12,11 @@ export default {
 </script>
 <style lang="stylus" scoped>
 .footer
-    position: relative
-    bottom: 0
-    left: 0
-    right: 0
-    width: 100%
-    font-size: 0.9em
-    text-align: center
+    position relative
+    bottom 0
+    left 0
+    right 0
+    width 100%
+    font-size 0.9em
+    text-align center
 </style>
