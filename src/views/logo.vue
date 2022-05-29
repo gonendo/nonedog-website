@@ -49,6 +49,6 @@ export default {
         font-size 2.5em
     @media (max-width 600px)
         text-align center
-        font-size 2em
+        font-size 1.8em
         margin-top 100px
 </style>
