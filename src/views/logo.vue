@@ -47,4 +47,5 @@ export default {
         margin-left 70px
     @media (max-width 600px)
         text-align center
+        font-size 2em
 </style>
