@@ -50,5 +50,5 @@ export default {
     @media (max-width 600px)
         text-align center
         font-size 2em
-        margin-top: 100px
+        margin-top 100px
 </style>
