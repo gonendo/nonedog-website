@@ -40,9 +40,9 @@ export default {
 
 .social
     @media (min-width 601px)
-        margin-top 200px
+        margin-top 205px
     @media (max-width 600px)
-        margin-top 50px
+        margin-top 55px
     height 100px
 
 .networks

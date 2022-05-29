@@ -45,7 +45,10 @@ export default {
     text-shadow 2px 2px 4px #000000
     @media (min-width 601px)
         margin-left 70px
+    @media (max-width 700px)
+        font-size 2.5em
     @media (max-width 600px)
         text-align center
         font-size 2em
+        margin-top: 100px
 </style>
